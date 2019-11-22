@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { ArgumentParser } = require('argparse')
 const sanitize = require('sanitize-filename')
 const mkdirp = require('mkdirp2').promise

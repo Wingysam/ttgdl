@@ -13,5 +13,8 @@
     "mkdirp2": "^1.0.4",
     "puppeteer": "^2.0.0",
     "sanitize-filename": "^1.6.3"
+  },
+  "bin": {
+    "ttgdl": "./index.js"
   }
 }
