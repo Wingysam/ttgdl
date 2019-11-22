@@ -51,7 +51,13 @@ async function downloadCategory(browser, page, id) {
   while (true) {
     const links = await page.$$('a.forumlink[title=Download]')
     for (const link of links) {
-      await downloadItem(browser, await link.evaluate((node) => node.href))
+      try {
+        await downloadItem(browser, await link.evaluate((node) => node.href))
+      } catch (error) {
+        console.log(error)
+        console.log('FAILED! Was downloading', await link.evaluate((node) => node.href))
+        process.exit(1)
+      }
     }
     const nextPage = await page.$('a[title="Next page"]')
     if (!nextPage) break
