@@ -1,0 +1,17 @@
+{
+  "name": "ttgdl",
+  "version": "1.0.0",
+  "description": "The Tech Game DL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wingysam <git@wingysam.xyz>",
+  "license": "ISC",
+  "dependencies": {
+    "argparse": "^1.0.10",
+    "mkdirp2": "^1.0.4",
+    "puppeteer": "^2.0.0",
+    "sanitize-filename": "^1.6.3"
+  }
+}
